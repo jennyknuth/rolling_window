@@ -1,5 +1,6 @@
 from nio.block.base import Block
 from nio.properties import VersionProperty, IntProperty, StringProperty
+import math
 
 class RollingWindow(Block):
 
@@ -12,16 +13,15 @@ class RollingWindow(Block):
         out_sigs = []
         for signal in signals:
             key = self.key(signal)
+            chunk_size = self.chunk_size(signal)
+            step_by = self.step_by(signal)
             if key in signal:
                 data = signal[key]
-                for i in range(len(data) - (self.chunk_size(signal) * self.step_by(signal)) + 1):
+                for i in range(math.ceil((len(data) - chunk_size + 1) / step_by)):
                     chunk = []
-                    for x in range(self.chunk_size(signal)):
-                        # if ((i + self.chunk_size(signal)) * self.step_by(signal) <= len(data)):
-                        chunk.append(data[(i * self.step_by(signal)) + x])
-                        print(chunk)
+                    for x in range(chunk_size):
+                        chunk.append(data[(i * step_by) + x])
 
-                    # if len(chunk):
                     out_sigs.append(chunk)
         print(out_sigs)
         self.notify_signals(out_sigs)
