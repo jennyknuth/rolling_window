@@ -1,3 +1,10 @@
 {
-    "_signals": {}
+    "_signals": {
+        "__dct__": {
+            "null": {
+                "input_1": {},
+                "input_2": {}
+            }
+        }
+    }
 }

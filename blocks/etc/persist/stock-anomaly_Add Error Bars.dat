@@ -1,3 +1,68 @@
 {
-    "_band_values": {}
+    "_band_values": {
+        "__dct__": {
+            "null": [
+                {
+                    "__tuple__": [
+                        1504305655.068116,
+                        {
+                            "count_ranges": 1,
+                            "sum_items": 345.66,
+                            "last_val": 345.66,
+                            "sum_ranges": 2.3899999999999864,
+                            "count_items": 1
+                        }
+                    ]
+                },
+                {
+                    "__tuple__": [
+                        1504305656.069078,
+                        {
+                            "count_ranges": 1,
+                            "sum_items": 347.36,
+                            "last_val": 347.36,
+                            "sum_ranges": 1.6999999999999886,
+                            "count_items": 1
+                        }
+                    ]
+                },
+                {
+                    "__tuple__": [
+                        1504305657.068019,
+                        {
+                            "count_ranges": 1,
+                            "sum_items": 353.18,
+                            "last_val": 353.18,
+                            "sum_ranges": 5.819999999999993,
+                            "count_items": 1
+                        }
+                    ]
+                },
+                {
+                    "__tuple__": [
+                        1504305658.067396,
+                        {
+                            "count_ranges": 1,
+                            "sum_items": 355.9,
+                            "last_val": 355.9,
+                            "sum_ranges": 2.7199999999999704,
+                            "count_items": 1
+                        }
+                    ]
+                },
+                {
+                    "__tuple__": [
+                        1504305659.070124,
+                        {
+                            "count_ranges": 1,
+                            "sum_items": 319.57,
+                            "last_val": 319.57,
+                            "sum_ranges": 36.329999999999984,
+                            "count_items": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    }
 }
